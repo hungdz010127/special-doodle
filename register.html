@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+
+    <!-- ĐÃ SỬA: Dùng CSS riêng cho phần đăng ký. -->
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="register-box">
+        <h1>Đăng ký tài khoản</h1>
+
+        <!-- ĐÃ SỬA: Thêm id để JavaScript lấy dữ liệu. -->
+        <form id="registerForm">
+            <label for="username">Tên đăng nhập</label>
+            <input type="text" id="username" placeholder="Nhập tên đăng nhập" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+
+            <label for="confirmPassword">Nhập lại mật khẩu</label>
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+
+            <button type="submit">Đăng ký</button>
+            <p id="message"></p>
+        </form>
+
+        <p>
+            Đã có tài khoản?
+            <!-- ĐÃ SỬA: Đường dẫn đúng đến trang đăng nhập. -->
+            <a href="dangnhap.html">Đăng nhập</a>
+        </p>
+
+        <!-- ĐÃ SỬA: Quay về folder than. -->
+        <a href="../than/than.html">Về trang chủ</a>
+    </div>
+
+    <!-- ĐÃ SỬA: Dùng lại dangnhap.js để không tạo thêm file JavaScript. -->
+    <script src="dangnhap.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

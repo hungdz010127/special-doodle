@@ -1,0 +1,273 @@
+/* =========================================================
+   BIẾN MÀU DÙNG CHUNG
+   ========================================================= */
+:root {
+    --mau-chinh: #222;
+    --mau-phu: #555;
+    --mau-nen: #f5f5f5;
+    --mau-vien: #ddd;
+    --mau-gia: #c0392b;
+    --ban-kinh: 8px;
+}
+
+/* =========================================================
+   CÀI ĐẶT CHUNG
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* =========================================================
+   KHỐI SẢN PHẨM
+   ========================================================= */
+section article {
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+section article h3 {
+    margin-top: 0;
+}
+
+/* Giá sản phẩm */
+.gia {
+    color: var(--mau-gia);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* =========================================================
+   LAYOUT 2 CỘT: THÔNG TIN (TRÁI) + ẢNH (PHẢI)
+   ========================================================= */
+.sp-2cot {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Cột trái: thông tin sản phẩm */
+.sp-thongtin {
+    flex: 1;
+    min-width: 0;
+}
+
+.sp-thongtin h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.sp-thongtin p {
+    margin: 6px 0;
+}
+
+/* Cột phải: ảnh sản phẩm */
+.sp-anh {
+    flex-shrink: 0;
+    width: 220px;
+    height: 270px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sp-anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Khi không có ảnh thì ẩn khung ảnh */
+.sp-anh.khong-co-anh {
+    display: none;
+}
+
+/* =========================================================
+   NÚT MUA HÀNG
+   ========================================================= */
+.nut-mua {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: var(--ban-kinh);
+    background-color: var(--mau-chinh);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nut-mua:hover {
+    background-color: var(--mau-phu);
+}
+
+.nut-mua:active {
+    transform: scale(0.98);
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+form {
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #222;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* =========================================================
+   ĐƯỜNG PHÂN CÁCH
+   ========================================================= */
+.ngan-cach {
+    border: none;
+    border-top: 1px dashed var(--mau-vien);
+    margin: 20px 0;
+}
+
+/* =========================================================
+   ẨN SECTION KHI CÓ THUỘC TÍNH hidden
+   ========================================================= */
+#order-section[hidden] {
+    display: none;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE — ĐIỆN THOẠI
+   ========================================================= */
+@media (max-width: 600px) {
+
+    /* Ảnh chuyển lên trên, thông tin xuống dưới */
+    .sp-2cot {
+        flex-direction: column-reverse;
+    }
+
+    .sp-anh {
+        width: 100%;
+        height: 240px;
+    }
+
+    .sp-thongtin h3 {
+        font-size: 18px;
+    }
+}

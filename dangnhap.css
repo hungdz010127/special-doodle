@@ -1,0 +1,435 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.login-container {
+    width: 500px;
+    max-width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   LOGO + TIÊU ĐỀ
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.logo-image {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 32px;
+
+    color: white;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+    width: 100%;
+
+    padding: 40px;
+
+    background: rgba(20, 20, 20, 0.94);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 0 30px rgba(120, 0, 255, 0.35);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================
+   LOGIN TITLE
+========================= */
+
+.login-box h2 {
+    margin-bottom: 30px;
+
+    font-size: 32px;
+
+    color: white;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box {
+    margin-bottom: 22px;
+}
+
+
+.input-box label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 17px;
+
+    color: white;
+}
+
+
+.input-box input {
+    width: 100%;
+
+    height: 62px;
+
+    padding: 0 18px;
+
+    border: 1px solid #777;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #292929;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+
+.input-box input::placeholder {
+    color: #aaa;
+}
+
+
+.input-box input:focus {
+    border-color: #9b4dff;
+
+    box-shadow:
+        0 0 8px rgba(111, 0, 255, 0.4);
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+    width: 100%;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.login-button:hover {
+    background: #ddd;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#message {
+    min-height: 20px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   SOCIAL LOGIN
+========================= */
+
+.social-login {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   OR
+========================= */
+
+.or {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+.or::before,
+.or::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #555;
+}
+
+
+.or span {
+    white-space: nowrap;
+}
+
+
+/* =========================
+   SOCIAL BUTTON
+========================= */
+
+.social-button {
+    width: 100%;
+
+    height: 55px;
+
+    margin-top: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* =========================
+   GOOGLE
+========================= */
+
+.google-button {
+    background: white;
+
+    color: #222;
+
+    border: 1px solid #ccc;
+}
+
+
+.google-button:hover {
+    background: #eee;
+}
+
+
+/* Google icon */
+
+.google-icon {
+    font-size: 21px;
+
+    font-weight: bold;
+
+    color: #4285f4;
+}
+
+
+/* =========================
+   FACEBOOK
+========================= */
+
+.facebook-button {
+    background: #1877f2;
+
+    color: white;
+
+    border: none;
+}
+
+
+.facebook-button:hover {
+    background: #0d65d9;
+}
+
+
+/* Facebook icon */
+
+.facebook-icon {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    background: white;
+
+    color: #1877f2;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+.register-text {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+.register-text a {
+    color: #9b5cff;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        width: 95%;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo-circle {
+        width: 55px;
+        height: 55px;
+
+        font-size: 18px;
+    }
+
+}

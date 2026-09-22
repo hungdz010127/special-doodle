@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&H Clothing - Streetwear Style</title>
+    <!-- Font Awesome cho icons (Giỏ hàng, Tìm kiếm, User, Mạng xã hội...) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="than.css">
+</head>
+<body>
+    <!-- 1. HEADER / NAVIGATION -->
+<header class="header">
+    <nav>
+        <a href="../shopping/TT.html">Mua hàng</a>  <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+        <a href="../dangnhap/dangnhap.html">Đăng nhập</a> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+        <a href="../dangnhap/register.html">Đăng ký</a> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+    </nav>
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="#" class="logo">G&H <i class="fa-regular fa-sun"></i></a>
+
+        <!-- Menu điều hướng -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Công cụ Header: Tìm kiếm, Tài khoản, Giỏ hàng -->
+        <div class="header-actions">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+              <a href="../dangnhap/dangnhap.html" class="action-btn">
+    <i class="fa-regular fa-user"></i>
+</a>
+           <a href="#" class="action-btn cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- 2. BANNER / HERO SECTION -->
+<section class="hero-banner">
+
+    <button class="slider-btn prev-btn" id="prevBtn">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="hero-content">
+        <span class="sub-title" id="heroSubTitle">G&H CLOTHING</span>
+
+        <h1 class="main-title" id="heroTitle">
+            STREETWEAR<br>STYLE
+        </h1>
+
+        <p class="desc" id="heroDesc">
+            Simple. Cool. Different.
+        </p>
+
+        <a href="#" class="btn-primary" id="heroButton">
+            Xem sản phẩm &rarr;
+        </a>
+    </div>
+
+    <button class="slider-btn next-btn" id="nextBtn">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+
+</section>
+
+<!-- 3. DANH MỤC NHANH (CATEGORIES) -->
+<section class="categories container">
+    <div class="category-item">
+        <div class="cat-icon"><i class="fa-solid fa-shirt"></i></div>
+        <span>Áo thun</span>
+    </div>
+    <div class="category-item">
+        <div class="cat-icon"><i class="fa-solid fa-user-ninja"></i></div>
+        <span>Áo hoodie</span>
+    </div>
+    <div class="category-item">
+        <div class="cat-icon"><i class="fa-solid fa-vest"></i></div>
+        <span>Áo khoác</span>
+    </div>
+    <div class="category-item">
+        <div class="cat-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+        <span>Quần</span>
+    </div>
+    <div class="category-item">
+        <div class="cat-icon"><i class="fa-solid fa-hat-cowboy"></i></div>
+        <span>Phụ kiện</span>
+    </div>
+</section>
+
+<!-- 4. SẢN PHẨM NỔI BẬT (FEATURED PRODUCTS) -->
+<section class="featured-products container">
+    <div class="section-header">
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+        <p>Những mẫu thiết kế được yêu thích nhất</p>
+    </div>
+
+    <!-- Grid 8 sản phẩm -->
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="Áo thun G&H 07.jpg" alt="Áo thun G&H 07">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Áo thun G&H 07</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Áo thun G&H 07', '000000')">
+    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="Áo hoodie.jpg" alt="Hoodie Basic">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Áo hoodie</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Hoodie Basic', '000000')">
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="áo thun flower.jpg" alt="Áo thun Flower">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Áo thun Flower</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Áo thun Flower', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="áo khoác denin.jpg" alt="Áo khoác Denim">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Áo khoác Denim</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Áo khoác Denim', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="áo chuối.png" alt="Áo thun Star">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">áo thun chuối</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Áo thun Star', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="hoodie washer.jpg" alt="Hoodie Washed">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Hoodie Washed</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Hoodie Washed', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="quần cargo.jpg" alt="Quần Cargo">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Quần Cargo</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Quần Cargo', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="mũ.jpg" alt="Nón G&H">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Nón G&H</h3>
+                <p class="product-price">000.000đ</p>
+                <button class="btn-add-cart" onclick="muaHang('Nón G&H', '000000')"> <!-- ĐÃ SỬA: Dùng đường dẫn đúng đến folder shopping. -->
+                    <i class="fa-solid fa-cart-shopping"></i> Mua ngay
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col brand-col">
+            <a href="#" class="logo">G&H <i class="fa-regular fa-sun"></i></a>
+            <p>G&H Clothing mang đến những thiết kế đường phố đơn giản nhưng đầy cá tính. Để bạn luôn là chính mình.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 1: Thông tin -->
+        <div class="footer-col">
+            <h4>Thông tin</h4>
+            <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2: Hỗ trợ -->
+        <div class="footer-col">
+            <h4>Hỗ trợ</h4>
+            <ul>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Đổi trả & hoàn tiền</a></li>
+                <li><a href="#">Vận chuyển</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Đăng ký tin -->
+        <div class="footer-col">
+            <h4>Đăng ký nhận tin</h4>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Nhập email của bạn...">
+                <button type="button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 G&H Clothing. All rights reserved.</p>
+    </div>
+</footer>
+<script src="than.js"></script>
+</body>
+</html>

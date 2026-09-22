@@ -1,0 +1,496 @@
+/* ==================== RESET & GLOBAL STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    background-color: #000000;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #fff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    color: #888;
+    font-size: 13px;
+}
+
+.search-box input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 6px 15px 6px 35px;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #666;
+    width: 240px;
+}
+
+.action-btn {
+    font-size: 18px;
+    color: #ccc;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.action-btn:hover {
+    color: #fff;
+}
+
+/* ==================== HERO BANNER ==================== */
+.hero-banner {
+    position: relative;
+    height: 480px;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)), 
+                url('https://via.placeholder.com/1600x600/111/fff?text=Streetwear+Banner') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.sub-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.desc {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+/* ==================== DANH MỤC NHANH ==================== */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.cat-icon {
+    width: 65px;
+    height: 65px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    transition: 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.category-item:hover .cat-icon {
+    background-color: #fff;
+    color: #000;
+}
+
+.category-item span {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+/* ==================== SẢN PHẨM NỔI BẬT ==================== */
+.featured-products {
+    padding: 50px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::before,
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background-color: #555;
+}
+
+.section-header h2::before {
+    left: -55px;
+}
+
+.section-header h2::after {
+    right: -55px;
+}
+
+.section-header p {
+    color: #888;
+    font-size: 13px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #121212;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #333;
+}
+
+.product-img img {
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.btn-add-cart {
+    width: 100%;
+    padding: 8px 0;
+    background: transparent;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: #050505;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.brand-col p {
+    color: #888;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul a {
+    color: #888;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+.footer-col ul a:hover {
+    color: #fff;
+}
+
+.newsletter-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-box input {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    flex-grow: 1;
+    border-radius: 3px 0 0 3px;
+}
+
+.newsletter-box button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.copyright {
+    border-top: 1px solid #111;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 11px;
+    color: #555;
+}
+
+/* ==================== RESPONSIVE (CHO ĐỘI DÙNG MOBILE/TABLET) ==================== */
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==================== HERO SLIDER ==================== */
+
+/* ==================== phần thêm sau ==================== */
+
+.hero-content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content.slide-change {
+    opacity: 0;
+    transform: translateY(10px);
+}
